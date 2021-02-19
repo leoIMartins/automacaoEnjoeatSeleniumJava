@@ -28,7 +28,7 @@ formatter.match({
   "location": "CardapioSteps.que_acesso_a_lista_de_restaurantes()"
 });
 formatter.result({
-  "duration": 10955922400,
+  "duration": 8034851100,
   "status": "passed"
 });
 formatter.scenario({
@@ -99,15 +99,14 @@ formatter.match({
   "location": "CardapioSteps.eu_escolho_o_restaurante(String)"
 });
 formatter.result({
-  "duration": 96128200,
+  "duration": 116351400,
   "status": "passed"
 });
 formatter.match({
   "location": "CardapioSteps.vejo_os_seguintes_itens_disponíveis_no_cardápio(DataTable)"
 });
 formatter.result({
-  "duration": 41379000,
-  "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat steps.cardapio.CardapioSteps.vejo_os_seguintes_itens_disponíveis_no_cardápio(CardapioSteps.java:37)\r\n\tat ✽.Então vejo os seguintes itens disponíveis no cardápio:(cardapio/cardapio.feature:15)\r\n",
-  "status": "failed"
+  "duration": 153353800,
+  "status": "passed"
 });
 });

@@ -17,7 +17,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10955922400,
+              "duration": 8034851100,
               "status": "passed"
             },
             "line": 9,
@@ -39,7 +39,7 @@
         "steps": [
           {
             "result": {
-              "duration": 96128200,
+              "duration": 116351400,
               "status": "passed"
             },
             "line": 14,
@@ -57,9 +57,8 @@
           },
           {
             "result": {
-              "duration": 41379000,
-              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat steps.cardapio.CardapioSteps.vejo_os_seguintes_itens_disponíveis_no_cardápio(CardapioSteps.java:37)\r\n\tat ✽.Então vejo os seguintes itens disponíveis no cardápio:(cardapio/cardapio.feature:15)\r\n",
-              "status": "failed"
+              "duration": 153353800,
+              "status": "passed"
             },
             "line": 15,
             "name": "vejo os seguintes itens disponíveis no cardápio:",
