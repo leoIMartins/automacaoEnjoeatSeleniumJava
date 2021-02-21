@@ -14,6 +14,6 @@ public class Restaurant extends ClasseBasePageObject {
 	}
 
 	public List<WebElement> menu() {
-		return driver.findElements(By.xpath("//div[@class='menu-item-info-box']"));
+		return driver.findElements(By.xpath("//div[@class='menu-item-info-box-content']"));
 	}
 }

@@ -28,7 +28,7 @@ formatter.match({
   "location": "CardapioSteps.que_acesso_a_lista_de_restaurantes()"
 });
 formatter.result({
-  "duration": 8034851100,
+  "duration": 7954316700,
   "status": "passed"
 });
 formatter.scenario({
@@ -99,14 +99,14 @@ formatter.match({
   "location": "CardapioSteps.eu_escolho_o_restaurante(String)"
 });
 formatter.result({
-  "duration": 116351400,
+  "duration": 109948400,
   "status": "passed"
 });
 formatter.match({
   "location": "CardapioSteps.vejo_os_seguintes_itens_disponíveis_no_cardápio(DataTable)"
 });
 formatter.result({
-  "duration": 153353800,
+  "duration": 94166188200,
   "status": "passed"
 });
 });

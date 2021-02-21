@@ -34,14 +34,13 @@ public class CardapioSteps {
 
 	@Então("^vejo os seguintes itens disponíveis no cardápio:$")
 	public void vejo_os_seguintes_itens_disponíveis_no_cardápio(DataTable table) throws Throwable {
-		List<WebElement> items = driver.findElements(By.xpath("//div[@class='menu-item-info-box-content']"));
-		List<String> productData = table.asList(String.class);
-		int volta = 1;
-		for (int i = 0; i < 3; i++) {
-			Assert.assertTrue(items.get(i).getText().contains(productData.get(volta*3).toUpperCase()));
-			Assert.assertTrue(items.get(i).getText().contains(productData.get(volta*3+1)));
-			Assert.assertTrue(items.get(i).getText().contains(productData.get(volta*3+2)));
-			volta++;
+		List<WebElement> items = restaurant.menu();
+		List<List<String>> productData = table.asLists(String.class);
+		
+		for (int i = 0; i < items.size(); i++) {
+			Assert.assertTrue(items.get(i).getText().contains(productData.get(i+1).get(0).toUpperCase()));
+			Assert.assertTrue(items.get(i).getText().contains(productData.get(i+1).get(1)));
+			Assert.assertTrue(items.get(i).getText().contains(productData.get(i+1).get(2)));
 		}
 	}
 
