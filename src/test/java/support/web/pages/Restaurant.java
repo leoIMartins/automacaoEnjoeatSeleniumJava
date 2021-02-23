@@ -10,7 +10,10 @@ public class Restaurant extends ClasseBasePageObject {
 
 	public Restaurant(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
+	}
+
+	public WebElement details() {
+		return driver.findElement(By.xpath("//*[@id='detail']"));
 	}
 
 	public List<WebElement> menu() {

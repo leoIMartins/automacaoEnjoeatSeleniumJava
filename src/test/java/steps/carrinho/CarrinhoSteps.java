@@ -115,4 +115,10 @@ public class CarrinhoSteps {
 		// Write code here that turns the phrase above into concrete actions
 		throw new PendingException();
 	}
+
+	@Então("^vejo a seguinte mensagem no carrinho \"([^\"]*)\"$")
+	public void vejo_a_seguinte_mensagem_no_carrinho(String arg1) throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+		throw new PendingException();
+	}
 }

@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("cardapio/cardapio.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("restaurantes/informacoes-adicionais.feature");
 formatter.feature({
   "comments": [
     {
@@ -7,87 +7,69 @@ formatter.feature({
     }
   ],
   "line": 3,
-  "name": "Cardápio",
-  "description": "  Para que eu possa decidir o que pretendo comer\r\n  Sendo um usuário que escolheu um restaurante\r\n  Posso acessar o cardápio",
-  "id": "cardápio",
+  "name": "Informacoes Adicionais",
+  "description": "  Para que eu possa ver as informacoes adicionais\r\n  Sendo um usuario que escolheu um restaurante\r\n  Posso ver a categoria, descricao detalhada e horarios de funcionamento",
+  "id": "informacoes-adicionais",
   "keyword": "Funcionalidade"
 });
-formatter.background({
-  "line": 8,
-  "name": "Restaurantes",
+formatter.scenario({
+  "line": 9,
+  "name": "Detalhes do restaurante",
   "description": "",
-  "type": "background",
-  "keyword": "Contexto"
+  "id": "informacoes-adicionais;detalhes-do-restaurante",
+  "type": "scenario",
+  "keyword": "Cenario",
+  "tags": [
+    {
+      "line": 8,
+      "name": "@infos"
+    }
+  ]
 });
 formatter.step({
-  "line": 9,
+  "line": 11,
   "name": "que acesso a lista de restaurantes",
   "keyword": "Dado "
+});
+formatter.step({
+  "line": 12,
+  "name": "eu escolho o restaurante \"Burger House\"",
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 13,
+  "name": "eu vejo as seguintes informacoes adicionais:",
+  "rows": [
+    {
+      "cells": [
+        "categoria",
+        "Hamburgers"
+      ],
+      "line": 14
+    },
+    {
+      "cells": [
+        "descrição",
+        "40 anos se especializando em trash food."
+      ],
+      "line": 15
+    },
+    {
+      "cells": [
+        "horários",
+        "Funciona todos os dias, de 10h às 22h"
+      ],
+      "line": 16
+    }
+  ],
+  "keyword": "Então "
 });
 formatter.match({
   "location": "CardapioSteps.que_acesso_a_lista_de_restaurantes()"
 });
 formatter.result({
-  "duration": 7954316700,
+  "duration": 6363253200,
   "status": "passed"
-});
-formatter.scenario({
-  "line": 12,
-  "name": "Produto disponível",
-  "description": "",
-  "id": "cardápio;produto-disponível",
-  "type": "scenario",
-  "keyword": "Cenario",
-  "tags": [
-    {
-      "line": 11,
-      "name": "@cardapio"
-    }
-  ]
-});
-formatter.step({
-  "line": 14,
-  "name": "eu escolho o restaurante \"Burger House\"",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 15,
-  "name": "vejo os seguintes itens disponíveis no cardápio:",
-  "rows": [
-    {
-      "cells": [
-        "produto",
-        "descricao",
-        "preco"
-      ],
-      "line": 16
-    },
-    {
-      "cells": [
-        "Classic Burger",
-        "O clássico. Não tem como errar.",
-        "R$ 18,50"
-      ],
-      "line": 17
-    },
-    {
-      "cells": [
-        "Batatas Fritas",
-        "Batatas fritas crocantes",
-        "R$ 5,50"
-      ],
-      "line": 18
-    },
-    {
-      "cells": [
-        "Refrigerante",
-        "O refri mais gelado da cidade",
-        "R$ 4,50"
-      ],
-      "line": 19
-    }
-  ],
-  "keyword": "Então "
 });
 formatter.match({
   "arguments": [
@@ -99,14 +81,9 @@ formatter.match({
   "location": "CardapioSteps.eu_escolho_o_restaurante(String)"
 });
 formatter.result({
-  "duration": 109948400,
+  "duration": 80539400,
   "status": "passed"
 });
 formatter.match({
-  "location": "CardapioSteps.vejo_os_seguintes_itens_disponíveis_no_cardápio(DataTable)"
-});
-formatter.result({
-  "duration": 94166188200,
-  "status": "passed"
-});
+  "location": "CardapioSteps.eu_vejo_as_seguintes_informacoes_adicionais(DataTable)"
 });

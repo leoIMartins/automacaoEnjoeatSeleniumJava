@@ -12,6 +12,7 @@ public class Listas {
 		List<String> nomes = new ArrayList<>();
 		nomes.add("Juliana");
 		nomes.add("Pedro");
+		nomes.add("Pedro");
 		nomes.add("Carlos");
 		nomes.add("Larissa");
 		nomes.add("João");
